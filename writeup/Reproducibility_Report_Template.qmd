@@ -38,6 +38,7 @@ I am choosing to reproduce the results of this study because a crucial component
 ### Anticipated challenges
 
 Do you anticipate running into any challenges when attempting to reproduce these result(s)? If so please, list them here.
+
 I anticipate that capturing the natural variability of animal behavior will be difficult in simulation. I also think that because I will be using a different statistical analysis software, there will be differences in how the effects are reported. There are many experiments described in this paper. So one challenge is attempting to reproduce and then simulate all those experiments. Therefore, I will only focus on one: the effects of chronic stress on a contingency degredation probe test.
 
 ### Links
