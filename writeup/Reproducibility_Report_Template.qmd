@@ -55,7 +55,11 @@ Please describe all the steps necessary to reproduce the key result(s) of this s
 
 To evaluate the effects of chronic stress on goal-directed actions, I will simulate behavioral data for 28 mice. 7 mice for the control, non-degraded group, 7 mice for the control, degraded group, 7 mice for the stress, non-degraded group, and 7 mice for the stress, degraded group. The primary confirmatory analysis will be a Stress X Contingency degradation group interaction, effect of contingency degradation, and an effect of stress.
 
+The hypothesis I want to confirm is that chronic stress will reduce sensitivity to the action-outcome contingency which should produce a significant Stress X Contingency degradation group interaction where we would observe stress mice press equally in degraded and nondegraded conditiones, whereas we would observe a reduced lever-pressing in the degraded condition for control mice. This corresponds to figure 1i.
+
 The parameter estimates we will use are means, SDs, SEMs, p-values. 
+
+I will use a 2(control vs chronic stress) X (degraded vs nondegraded)
 
 ### Differences from original study
 
