@@ -33,7 +33,7 @@ https://github.com/tristantd/giovannielloetal2025.git
 ### Justification for choice of study
 
 Please describe why you chose to reproduce the results of this study.
-I am choosing to reproduce the results of this study because a crucial component for my research program is evaluating disruption to behavioral control strategies in disease models--specifically, alcohol dependence. This study looks at the effects of chronic stress, while I want to investigate effects of chronic ethanol exposure. Additionally, this paper evaluates the contributions of distinct amygdalar-striatal circuitry in supporting goal-directed actions or enabling habit formation. I am interested in the role of amygdalar-circuitry in the context of incentive motivation. While this study looks at differnt roles of this pathway, it is only one of a few showing existence of CeA to dorsomedial straital afferents.
+I am choosing to reproduce the results of this study because a crucial component for my research program is evaluating disruption to behavioral control strategies in disease models--specifically, alcohol dependence. This study looks at the effects of chronic stress, while I want to investigate effects of chronic ethanol exposure. Additionally, this paper evaluates the contributions of distinct amygdalar-striatal circuitry in supporting goal-directed actions or enabling habit formation. I am interested in the role of amygdalar-circuitry in the context of incentive motivation. While this study looks at differnt roles of this pathway, it is only one of a few showing existence of CeA to dorsomedial straital afferents 
 
 ### Anticipated challenges
 
@@ -59,6 +59,8 @@ The parameter estimates we will use are means, SDs, SEMs, p-values.
 ### Differences from original study
 
 Explicitly describe known differences in the analysis pipeline between the original paper and yours (e.g., computing environment). The goal, of course, is to minimize those differences, but differences may occur. Also, note whether such differences are anticipated to influence your ability to reproduce the original results.
+
+The differences from the original study are that this will be a simulation by which no behavioral data will be collected. I will use the same analysis, two-way ANOVA, for the simulated data.
 
 ## Project Progress Check 1
 
