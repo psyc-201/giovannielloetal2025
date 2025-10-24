@@ -60,7 +60,7 @@ The parameter estimates we will use are means, SDs, SEMs, p-values.
 
 Explicitly describe known differences in the analysis pipeline between the original paper and yours (e.g., computing environment). The goal, of course, is to minimize those differences, but differences may occur. Also, note whether such differences are anticipated to influence your ability to reproduce the original results.
 
-The differences from the original study are that this will be a simulation by which no behavioral data will be collected. I will use the same analysis, two-way ANOVA, for the simulated data.
+The differences from the original study are that this will be a simulation by which no behavioral data will be collected. Additionally, I will use a different statistical analysis software that the paper uses--they use Prism GraphPad and I will use JASP because it is free. I will use the same analysis, two-way ANOVA, for the simulated data.
 
 ## Project Progress Check 1
 
