@@ -29,16 +29,18 @@ https://github.com/tristantd/giovannielloetal2025.git
 ### Justification for choice of study
 
 Please describe why you chose to reproduce the results of this study.
+I am choosing to reproduce the results of this study because a crucial component for my research program is evaluating disruption to behavioral control strategies in disease models--specifically, alcohol dependence. This study looks at the effects of chronic stress, while I want to investigate effects of chronic ethanol exposure. Additionally, this paper evaluates the contributions of distinct amygdalar-striatal circuitry in supporting goal-directed actions or enabling habit formation. I am interested in the role of amygdalar-circuitry in the context of incentive motivation. While this study looks at differnt roles of this pathway, it is only one of a few showing existence of CeA to dorsomedial straital afferents.
 
 ### Anticipated challenges
 
 Do you anticipate running into any challenges when attempting to reproduce these result(s)? If so please, list them here.
+I anticipate that capturing the natural variability of animal behavior will be difficult in simulation. I also think that because I will be using a different statistical analysis software, there will be differences in how the effects are reported. There are many experiments described in this paper. So one challenge is attempting to reproduce and then simulate all those experiments. Therefore, I will only focus on one: the effects of chronic stress on a contingency degredation probe test.
 
 ### Links
 
-Project repository (on Github): 
+Project repository (on Github): https://github.com/tristantd/giovannielloetal2025.git
 
-Original paper (as hosted in your repo): 
+Original paper (as hosted in your repo): https://www.nature.com/articles/s41586-024-08580-w
 
 ## Methods
 
