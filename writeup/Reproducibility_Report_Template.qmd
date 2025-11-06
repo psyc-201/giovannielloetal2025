@@ -74,10 +74,13 @@ The differences from the original study are that this will be a simulation by wh
 
 Please describe the outcome measure for the success or failure of your reproduction and how this outcome will be computed.
 
+The outcome measure for the success of this reproducibility project will be if I can get show the same effect that the authors claim in their paper. This will be comparing my simulated data with the authors' real reported data. This will be computed using an ANOVA on the simulated data and comparing effect sizes. 
 
 ### Pipeline progress
 
 Earlier in this report, you described the steps necessary to reproduce the key result(s) of this study. Please describe your progress on each of these steps (e.g., data preprocessing, model fitting, model evaluation).
+
+I have now reproduced the statistics reported in the original paper. I have also made simulation code that simulates press rate based on the means and standard deviations of the groups. I need to figure out how to get the raw numbers from this data frame so that I can put it into an excel sheet and analyze/do statistical tests on JASP.
 
 
 ## Results
