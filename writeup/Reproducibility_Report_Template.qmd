@@ -16,15 +16,15 @@ format:
 
 The experiment I will simulate and reproduce comes from Giovaniello et al. (2025), which investigates how distinct nuclei of the amygdala and their projections to the striatum support supoprt goal-directed vs habitual behavior, and the disruption of these processes by chronic stress. Chronic, mild stress perturbs these brain regions, impairing a mouse’s ability to exert volitional control over actions, as measured by two gold-standard assessments of goal-directed behavior: outcome-devaluation and contingency degradation. 
 
-The focus of my reproducibility report is to test and simulate the authors' core argument that chronic stress disrupts goal-directed action and promotes habits, as indexed by insensitivity to contingency degradation. This behavioral finding is reflects a Stress X Contingency degradation group interaction on lever press rates.
+The focus of my reproducibility report is to reproduce and simulate the authors' core argument that chronic stress disrupts goal-directed action and promotes habits, as indexed by insensitivity to contingency degradation. This behavioral finding is reflects a stress x contingency degradation group interaction on lever press rates.
 
-The experiments described by this paper are important for my research program because it goes in parallel with my interest in circuit-specific mechanisms underlying disrupted behavioral control in models of alcohol dependence. Specifically, the finding of the existence and a functional role for CeA-DMS afferents really resonates with my research interests. The DMS is a nucleus within the basal ganglia that has a role in the acquisition of goal-directed behavior that supports adaptive decision-making. The CeA is a nucleus within the amygdalar complex that has become a focal point of research on incentive salience. These regions, when investigated on their own, are compromised in disease states such as ethanol dependence, and investigating amygdalar-striatal afferents will provide knowledge on neural mechanisms of disrupted motivational and cognitive control over decision-making.
+The experiments described by this paper are important for my research program because it converges with my interest in circuit-specific mechanisms underlying disrupted behavioral control in models of alcohol dependence. Specifically, the finding of the existence and a functional role for CeA-DMS afferents really resonates with my research interests. The DMS is a nucleus within the basal ganglia that has a role in the acquisition of goal-directed behavior that supports adaptive decision-making. The CeA is a nucleus within the amygdalar complex that has become a focal point of research on incentive salience. These regions, when investigated on their own, are compromised in disease states such as ethanol dependence, and investigating amygdalar-striatal afferents will provide knowledge on neural mechanisms of disrupted motivational and cognitive control over decision-making.
 
 In order to simulate this experiment, I will look over the available behavioral data from the paper and record the means and variabilities for individual aspects (mouse, session, rate). These metrics will be important for how I will want to simulate datasets. 
 
-The main statistical analysis I will use to reproduce and simulate the main finding is a two-way ANOVA with Stress and Contingency degradation groups as factors. Lever-press rate during the contingency degradation probe test is what we will use as our measure. A challenge in simulation is capturing the variability of animal behavior, since performance will change across sessions and response acquisition will differ between animals.
+The main statistical analysis I will use to reproduce and simulate the main finding is a two-way ANOVA with stress and contingency degradation groups as factors. Lever-press rate during the contingency degradation probe test is what we will use as our measure. A challenge in simulation is capturing the variability of animal behavior, since performance will change across sessions and response acquisition will differ between animals.
 
-Prior to running simulations, I will attempt to reproduce the analyses reported in the paper using the available data. The authors used a statistical analysis software called Prism on all quantitative data. I will use a different analysis software called JASP since it is free. I will only focus on reproducing the experiment that I intend to simulate– the effects of chronic stress on goal-directed actions.
+Prior to running simulations, I will attempt to reproduce the analyses reported in the paper using the available data. The authors used a statistical analysis software called Prism on all quantitative data. I will use a different analysis software called JASP since it is free. I will only focus on reproducing the experiment that I intend to simulate– the effects of chronic stress on goal-directed action control.
 
 https://github.com/tristantd/giovannielloetal2025.git
 
@@ -34,7 +34,7 @@ https://github.com/tristantd/giovannielloetal2025.git
 
 Please describe why you chose to reproduce the results of this study.
 
-I am choosing to reproduce the results of this study because a crucial component for my research program is evaluating disruption to behavioral control strategies in disease models--specifically, alcohol dependence. This study looks at the effects of chronic stress, while I want to investigate effects of chronic ethanol exposure. Additionally, this paper evaluates the contributions of distinct amygdalar-striatal circuitry in supporting goal-directed actions or enabling habit formation. I am interested in the role of amygdalar-circuitry in the context of incentive motivation. While this study looks at differnt roles of this pathway, it is only one of a few showing existence of CeA to dorsomedial straital afferents 
+I am choosing to reproduce the results of this study because a crucial component for my research program is evaluating disruptions to behavioral control strategies in disease models--specifically, alcohol dependence. This study looks at the effects of chronic stress, while I want to investigate effects of chronic ethanol exposure. Additionally, this paper evaluates the contributions of distinct amygdalar-striatal circuitry in supporting goal-directed actions or enabling habit formation. I am interested in the role of amygdalar-circuitry in the context of incentive motivation. While this study looks at differnt roles of this pathway, it is only one of a few showing existence of CeA to dorsomedial straital afferents and a functional role. 
 
 ### Anticipated challenges
 
@@ -54,9 +54,9 @@ Original paper (as hosted in your repo): https://www.nature.com/articles/s41586-
 
 Please describe all the steps necessary to reproduce the key result(s) of this study.
 
-To evaluate the effects of chronic stress on goal-directed actions, I will simulate behavioral data for 32 mice. 8 mice for the control, non-degraded group, 8 mice for the control, degraded group, 8 mice for the stress, non-degraded group, and 8 mice for the stress, degraded group. The primary confirmatory analysis will be a Stress X Contingency degradation group interaction, effect of contingency degradation, and no effect of stress.
+To evaluate the effects of chronic stress on goal-directed actions, I will simulate behavioral data for 29 mice (7 mice for the control, non-degraded group; 7 mice for the control, degraded group; 7 mice for the stress, non-degraded group; and 8 mice for the stress, degraded group). The primary confirmatory analysis will be a stress x contingency degradation group interaction, effect of contingency degradation, and no effect of stress.
 
-The hypothesis I want to confirm is that chronic stress will reduce sensitivity to the action-outcome contingency (as evidenced by no reduction in lever press rate) which should produce a significant Stress X Contingency degradation group interaction where we would observe stress mice press equally in degraded and nondegraded conditions, whereas we would observe a reduced lever-pressing in the degraded condition for control mice. This corresponds to figure 1i.
+The hypothesis I want to confirm is that chronic stress will reduce sensitivity to the action-outcome contingency (as evidenced by no reduction in lever press rate when contingency is degraded) which should produce a significant stress x contingency degradation group interaction where we would observe stress mice press equally in degraded and non-degraded conditions, whereas we would observe a reduced lever pressing in the degraded condition for control mice. This corresponds to figure 1i.
 
 The parameter estimates we will use are means, SDs, SEMs, p-values. 
 
@@ -66,7 +66,7 @@ I will use a 2(control vs chronic stress) X 2(degraded vs nondegraded)
 
 Explicitly describe known differences in the analysis pipeline between the original paper and yours (e.g., computing environment). The goal, of course, is to minimize those differences, but differences may occur. Also, note whether such differences are anticipated to influence your ability to reproduce the original results.
 
-The differences from the original study are that this will be a simulation by which no behavioral data will be collected. Additionally, I will use a different statistical analysis software that the paper uses--they use Prism GraphPad and I will use JASP because it is free. I will use the same analysis, two-way ANOVA, for the simulated data. 1
+The differences from the original study are that this will be a simulation by which no behavioral data will be collected. Additionally, I will use a different statistical analysis software that the paper uses--they use Prism GraphPad and I will use JASP because it is free. I will use the same analysis, two-way ANOVA, for the simulated data. These differences will potentially influence my ability to reproduce the original results. For example, the differerent statistical analysis softwares may result in different reported values.
 
 ## Project Progress Check 1
 
@@ -74,7 +74,7 @@ The differences from the original study are that this will be a simulation by wh
 
 Please describe the outcome measure for the success or failure of your reproduction and how this outcome will be computed.
 
-The outcome measure for the success of this reproducibility project will be if I can get show the same effect that the authors claim in their paper. This will be comparing my simulated data with the authors' real reported data. This will be computed using an ANOVA on the simulated data and comparing effect sizes. 
+The outcome measure for the success of this reproducibility project will be if I can show the same effect that the authors claim in their paper. This will be comparing my simulated data with the authors' real reported data. This will be computed using an ANOVA on the simulated data and comparing effect sizes. 
 
 ### Pipeline progress
 
